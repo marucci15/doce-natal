@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doce Natal | Home</title>
+<link rel="icon" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+<header>
+<a href="index.html"><img class="logo" src="img/logo.svg" alt="Logotipo da Doce Natal"></a>
+<button class="btn-menu" aria-label="Abrir menu">☰</button>
+<nav class="menu"><a href="index.html" class=ativo>Home</a><a href="produtos.html">Produtos</a><a href="sobre.html">Sobre nós</a><a href="galeria.html">Galeria</a><a href="contato.html">Contato</a></nav>
+<div class="acoes"><button id="btn-musica">Tocar música</button><span>🛒 <b id="qtd-carrinho">0</b> · <b id="total-carrinho">R$ 0,00</b></span><button id="limpar" title="Esvaziar carrinho">✕</button></div>
+</header>
+<main>
+<h1>Doce Natal: o sabor do Natal na sua mesa</h1>
+<section class="banner"><img src="img/banners/montanhas.svg" data-velocidade="0.2" alt="Montanhas nevadas"><img src="img/banners/pinheiros.svg" data-velocidade="0.5" alt="Pinheiros enfeitados"><p>🎅 Panetones, biscoitos e cestas feitos com carinho</p></section>
+<p class="contagem" id="contagem"></p>
+<section class="carrossel revelar"><div class="slide" style="background:var(--vermelho)"><h2>🎄 Panetones a partir de R$ 14,90</h2></div><div class="slide" style="background:var(--verde)"><h2>🍪 Biscoitos de gengibre fresquinhos</h2></div><div class="slide" style="background:var(--noite)"><h2>🎁 Cestas prontas para presentear</h2></div><button id="anterior">‹</button><button id="proximo">›</button><div id="pontos"></div></section>
+<section><h2>⭐ Destaques</h2><div id="destaques" class="grade-produtos"></div><p><a class="botao" href="produtos.html">Ver todos os 50 produtos</a> <a class="botao" href="contato.html">Fale conosco</a></p></section>
+</main>
+<footer><p>&copy; 2026 Doce Natal · O sabor do Natal na sua mesa 🎄 · Colégio UNASP · Imagens e ícones: ilustrações próprias (SVG/emoji)</p></footer>
+<button id="topo" aria-label="Voltar ao topo">⬆</button>
+<script src="js/produtos.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doce Natal | Produtos</title>
+<link rel="icon" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+<header>
+<a href="index.html"><img class="logo" src="img/logo.svg" alt="Logotipo da Doce Natal"></a>
+<button class="btn-menu" aria-label="Abrir menu">☰</button>
+<nav class="menu"><a href="index.html">Home</a><a href="produtos.html" class=ativo>Produtos</a><a href="sobre.html">Sobre nós</a><a href="galeria.html">Galeria</a><a href="contato.html">Contato</a></nav>
+<div class="acoes"><button id="btn-musica">Tocar música</button><span>🛒 <b id="qtd-carrinho">0</b> · <b id="total-carrinho">R$ 0,00</b></span><button id="limpar" title="Esvaziar carrinho">✕</button></div>
+</header>
+<main>
+<h1>Nossos produtos</h1>
+<div class="filtros"><input type="text" id="busca" placeholder="Buscar produto..." aria-label="Buscar produto"><select id="categoria" aria-label="Categoria"><option value="todas">Todas as categorias</option></select></div>
+<p id="contador"></p>
+<section id="lista-produtos" class="grade-produtos"></section>
+</main>
+<footer><p>&copy; 2026 Doce Natal · O sabor do Natal na sua mesa 🎄 · Colégio UNASP · Imagens e ícones: ilustrações próprias (SVG/emoji)</p></footer>
+<button id="topo" aria-label="Voltar ao topo">⬆</button>
+<script src="js/produtos.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

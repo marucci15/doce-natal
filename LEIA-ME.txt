@@ -1,0 +1,30 @@
+LOJA: Doce Natal
+SEGMENTO: Confeitaria natalina
+TURMA: 1TI_
+
+INTEGRANTES:
+ - Nome completo - nº
+ - Nome completo - nº
+ - Nome completo - nº
+
+LINKS:
+ Site (GitHub Pages): https://usuario.github.io/doce-natal/
+ Repositório (GitHub): https://github.com/usuario/doce-natal
+ Vídeo (YouTube): https://www.youtube.com/watch?v=...
+
+RECURSOS DE JAVASCRIPT IMPLEMENTADOS:
+ 1. Slideshow - index.html
+ 2. Parallax - index.html
+ 3. Sons (música + sino) - todas as páginas
+ 4. Cards dinâmicos (50 produtos) - index e produtos
+ 5. Filtro e busca - produtos.html
+ 6. Carrinho com localStorage - index e produtos
+ 7. Contagem regressiva - index, sobre, galeria
+ 8. Validação de formulário - contato.html
+ 9. Menu responsivo - todas
+ 10. Lightbox - galeria.html
+ 11. Neve - todas
+ 13. Animação ao rolar - index e sobre
+ 14. Voltar ao topo - todas
+
+CRÉDITOS: imagens e logotipo são SVG/emoji feitos para o projeto; sons sintetizados. Fontes: Google Fonts.
