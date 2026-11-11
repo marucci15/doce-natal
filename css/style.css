@@ -1,28 +1,30 @@
-:root{--vermelho:#B3202A;--verde:#1F5D3A;--dourado:#C9A227;--neve:#FFFFFF;--creme:#FBF6EA;--noite:#12263F;--titulo:"Mountains of Christmas",cursive;--texto:"Poppins",sans-serif;--esp:1rem}
+:root{--vermelho:#B3202A;--verde:#1F5D3A;--dourado:#C9A227;--neve:#FFFFFF;--creme:#FBF6EA;--noite:#12263F;--titulo:"Fredoka",sans-serif;--texto:"Fredoka",sans-serif;--esp:1rem}
 *{box-sizing:border-box}
-body{margin:0;font-family:var(--texto);background:var(--creme);color:var(--noite)}
-h1,h2,h3{font-family:var(--titulo);color:var(--vermelho)}
-h1{font-size:2.2rem;text-align:center}
+body{margin:0;font-family:var(--texto);background:#000;color:var(--neve)}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:url(../img/fundo-estrelas.jpg) center/cover no-repeat}
+h1,h2,h3{font-family:var(--titulo);color:var(--dourado);font-weight:700}
+h2{font-size:1.6rem}h3{font-size:1.25rem}
+h1{font-size:2rem;text-align:center;line-height:1.2}
 main{max-width:1200px;margin:auto;padding:var(--esp)}
 header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem;padding:.5rem var(--esp);background:var(--vermelho);border-bottom:4px solid var(--dourado);position:sticky;top:0;z-index:50}
 .logo{height:44px}
 .menu{display:none;gap:1rem}
-.menu a{color:var(--neve);text-decoration:none;font-weight:600;padding:.3rem 0}
+.menu a{font-family:var(--titulo);font-size:1rem;color:var(--neve);text-decoration:none;font-weight:600;padding:.3rem 0}
 .menu a:hover,.menu a:focus{color:var(--dourado)}
 .menu a.ativo::after{content:"";display:block;height:3px;background:var(--dourado)}
 .btn-menu{background:none;border:0;color:var(--neve);font-size:1.6rem}
 .acoes{display:flex;align-items:center;gap:.5rem;color:var(--neve);font-size:.85rem}
-button,.botao{font-family:var(--texto);background:var(--dourado);color:var(--noite);border:0;border-radius:20px;padding:.5rem 1rem;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
+button,.botao{font-family:var(--titulo);font-size:.95rem;background:var(--dourado);color:var(--noite);border:0;border-radius:20px;padding:.5rem 1rem;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
 button:hover,.botao:hover{background:var(--verde);color:var(--neve)}
-.banner{position:relative;min-height:60vh;overflow:hidden;background:linear-gradient(var(--noite),var(--verde));display:flex;align-items:center;justify-content:center;border-radius:16px;background-attachment:fixed}
-.banner img{position:absolute;bottom:0;left:0;width:100%}
-.banner p{position:relative;color:var(--neve);font-family:var(--titulo);font-size:1.8rem;text-align:center;z-index:2;padding:1rem}
-.contagem{text-align:center;font-size:1.3rem;color:var(--verde);font-weight:600;animation:pulsar 2s infinite}
+.banner{overflow:hidden;background:#07090f;border-radius:16px}
+.banner img{display:block;width:100%;height:auto;scale:1.1}
+.contagem{text-align:center;font-family:var(--titulo);font-size:1.4rem;color:var(--dourado);font-weight:600;animation:pulsar 2s infinite}
 @keyframes pulsar{50%{transform:scale(1.05)}}
 .carrossel{position:relative;margin:1.5rem 0;border-radius:16px;overflow:hidden}
-.slide{display:none;min-height:200px;align-items:center;justify-content:center;text-align:center}
+.slide{display:none}
+.slide img{display:block;width:100%;height:auto}
 .slide h2{color:var(--neve);font-size:1.8rem}
-.slide.ativo{display:flex;animation:aparecer 1s}
+.slide.ativo{display:block;animation:aparecer 1s}
 @keyframes aparecer{from{opacity:0}to{opacity:1}}
 #anterior,#proximo{position:absolute;top:40%;font-size:1.5rem;padding:.2rem .8rem}
 #anterior{left:8px}#proximo{right:8px}
@@ -30,7 +32,7 @@ button:hover,.botao:hover{background:var(--verde);color:var(--neve)}
 #pontos button{width:12px;height:12px;padding:0;margin:0 4px;border-radius:50%;background:var(--neve)}
 #pontos button.ativo{background:var(--dourado)}
 .grade-produtos{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.5rem}
-.card{background:var(--neve);border-radius:16px;overflow:hidden;transition:transform .3s,box-shadow .3s;padding-bottom:1rem;text-align:center;animation:flutuar 4s ease-in-out infinite}
+.card{color:var(--noite);background:var(--neve);border-radius:16px;overflow:hidden;transition:transform .3s,box-shadow .3s;padding-bottom:1rem;text-align:center;animation:flutuar 4s ease-in-out infinite}
 .card:hover{transform:translateY(-8px);box-shadow:0 12px 24px rgba(0,0,0,.2)}
 @keyframes flutuar{50%{margin-top:-4px}}
 .card img{width:100%;height:200px;object-fit:cover}
@@ -40,9 +42,9 @@ button:hover,.botao:hover{background:var(--verde);color:var(--neve)}
 input,select,textarea{padding:.6rem;border:2px solid var(--verde);border-radius:10px;font-family:var(--texto)}
 .vazio{grid-column:1/-1;text-align:center;font-size:1.3rem}
 .trio{display:grid;gap:1rem;grid-template-columns:1fr}
-.trio article{background:var(--neve);border-left:5px solid var(--dourado);border-radius:12px;padding:1rem}
+.trio article{color:var(--noite);background:var(--neve);border-left:5px solid var(--dourado);border-radius:12px;padding:1rem}
 form{display:grid;gap:.5rem;max-width:520px;margin:1.5rem auto}
-#mensagem-form{font-weight:600;color:var(--vermelho)}
+#mensagem-form{font-weight:600;color:var(--dourado)}
 .gal img{cursor:zoom-in;width:100%;height:200px;object-fit:cover;border-radius:12px}
 #lightbox{position:fixed;inset:0;background:rgba(18,38,63,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:100;cursor:zoom-out;color:var(--neve)}
 #lightbox[hidden]{display:none}
@@ -53,3 +55,5 @@ form{display:grid;gap:.5rem;max-width:520px;margin:1.5rem auto}
 @keyframes cair{from{transform:translateY(-10vh)}to{transform:translateY(110vh)}}
 footer{background:var(--verde);color:var(--neve);text-align:center;padding:1rem;margin-top:2rem;border-top:4px solid var(--dourado);display:flex;justify-content:center}
 #topo{display:none;position:fixed;right:16px;bottom:16px;z-index:60}
+.card h3,.trio article h3{color:var(--vermelho)}
+.acoes{font-size:.9rem}

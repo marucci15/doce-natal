@@ -56,7 +56,7 @@ window.addEventListener("scroll", () => {
 $("#topo").onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
 // 3. Sons: música só começa após clique, volume baixo
-const musica = new Audio("audio/musica-natal.wav");
+const musica = new Audio("audio/musica-natal.mp3");
 musica.loop = true; musica.volume = 0.3;
 $("#btn-musica").onclick = function () {
   if (musica.paused) { musica.play(); this.textContent = "Pausar música"; }
