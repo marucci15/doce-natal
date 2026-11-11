@@ -1,0 +1,5 @@
+/* Mobile-first */
+.grade-produtos{grid-template-columns:1fr}
+.menu.aberto{display:flex;flex-direction:column;width:100%}
+@media (min-width:600px){.grade-produtos{grid-template-columns:repeat(2,1fr)}.trio{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:992px){.grade-produtos{grid-template-columns:repeat(4,1fr)}.menu{display:flex;flex-direction:row}.btn-menu{display:none}h1{font-size:3rem}}
