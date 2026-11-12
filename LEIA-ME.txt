@@ -9,7 +9,7 @@ INTEGRANTES:
 LINKS:
  Site (GitHub Pages): https://marucci15.github.io/doce-natal/
  Repositório (GitHub): https://github.com/marucci15/doce-natal
- Vídeo (YouTube): https://www.youtube.com/watch?v=...
+ Vídeo (YouTube): https://youtu.be/SovD9_X6zBk
 
 RECURSOS DE JAVASCRIPT IMPLEMENTADOS:
  1. Slideshow - index.html
