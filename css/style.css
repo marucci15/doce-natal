@@ -17,7 +17,12 @@ header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-betw
 button,.botao{font-family:var(--titulo);font-size:.95rem;background:var(--dourado);color:var(--noite);border:0;border-radius:20px;padding:.5rem 1rem;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
 button:hover,.botao:hover{background:var(--verde);color:var(--neve)}
 .banner{overflow:hidden;background:#07090f;border-radius:16px}
-.banner img{display:block;width:100%;height:auto;scale:1.1}
+.banner{position:relative}
+.banner-fundo{display:block;width:100%;height:auto;scale:1.1}
+/* camadas do parallax: mais altas que o banner e repetidas, para nunca aparecer falha ao mover */
+.camada{position:absolute;left:0;top:-300%;width:100%;height:400%;pointer-events:none;will-change:transform}
+.estrelas{opacity:.65;background-image:radial-gradient(circle,#fff 0 1.5px,transparent 2.5px),radial-gradient(circle,#fff 0 1px,transparent 2px),radial-gradient(circle,#fff 0 1px,transparent 2px);background-size:137px 137px,89px 89px,53px 53px;background-position:10px 20px,47px 61px,31px 7px}
+.luzes{opacity:.85;background-image:radial-gradient(circle,rgba(255,214,102,.95) 0 3px,rgba(201,162,39,.35) 5px,transparent 9px),radial-gradient(circle,rgba(255,255,255,.85) 0 2px,rgba(255,255,255,.2) 4px,transparent 7px);background-size:263px 241px,197px 211px;background-position:40px 30px,150px 120px}
 .contagem{text-align:center;font-family:var(--titulo);font-size:1.4rem;color:var(--dourado);font-weight:600;animation:pulsar 2s infinite}
 @keyframes pulsar{50%{transform:scale(1.05)}}
 .carrossel{position:relative;margin:1.5rem 0;border-radius:16px;overflow:hidden}
