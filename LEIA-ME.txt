@@ -8,7 +8,7 @@ INTEGRANTES:
 
 LINKS:
  Site (GitHub Pages): https://usuario.github.io/doce-natal/
- Repositório (GitHub): https://github.com/usuario/doce-natal
+ Repositório (GitHub): https://github.com/marucci15/doce-natal
  Vídeo (YouTube): https://www.youtube.com/watch?v=...
 
 RECURSOS DE JAVASCRIPT IMPLEMENTADOS:
