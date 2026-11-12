@@ -1,11 +1,10 @@
 LOJA: Doce Natal
 SEGMENTO: Confeitaria natalina
-TURMA: 1TI_
+TURMA: 1TID
 
 INTEGRANTES:
- - Nome completo - nº
- - Nome completo - nº
- - Nome completo - nº
+ - Pedro Marucci Silva
+
 
 LINKS:
  Site (GitHub Pages): https://usuario.github.io/doce-natal/
@@ -26,5 +25,3 @@ RECURSOS DE JAVASCRIPT IMPLEMENTADOS:
  11. Neve - todas
  13. Animação ao rolar - index e sobre
  14. Voltar ao topo - todas
-
-CRÉDITOS: imagens e logotipo são SVG/emoji feitos para o projeto; sons sintetizados. Fontes: Google Fonts.
